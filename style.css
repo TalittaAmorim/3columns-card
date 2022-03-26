@@ -1,0 +1,130 @@
+@charset"UTF-8"; 
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2? family= Lexend+Deca & display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root{
+  /*colors*/
+--orange: hsl(31, 77%, 52%);
+--cyan: hsl(184, 100%, 22%);
+--cyan-dark: hsl(179, 100%, 13%);
+--Transparent-white (paragraphs): hsla(0, 0%, 100%, 0.75);
+--light-gray: hsl(0, 0%, 95%);
+/*fonts*/
+--lexend: 'Lexend Deca';
+--Big:'Big Shoulders Display', cursive;
+}
+body{
+font-family: vat(--lexend);
+width: 100%;
+min-height: 100vh;
+display:flex;
+flex-direction: column;
+justify-content: center;
+justify-items: center;
+align-items: center;
+}
+main{
+  background-color: var(--light-gray);
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+ padding: 2em;
+}
+section{
+  width: 18em;
+  height: 30em;
+  padding: 10px;
+  color: white;
+}
+.card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1.4em;
+}
+.images{
+  margin: 10px;
+}
+h2{
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: var(--Big);
+  color: white;
+  margin-bottom: 1.4em;
+  font-size: 2em;
+}
+p{
+  font-weight: 400;
+  margin-bottom: 30px;
+  line-height: 1.4em;
+  font-size: 1em;
+}
+button{
+  width: 70%;
+  font-family: var(--lexend);
+  margin: 5em 0em 1em 0em; 
+  padding: 1em 2em;
+  background: #fff;
+  border:none;
+  border-radius: 30px;
+  cursor:pointer;
+  transition: all 0.4s ease-in-out;
+}
+button:hover{
+  background-color: transparent;
+  color:#fff;
+  border:1px solid #fff;
+}
+.conteiner >.sedans{
+  border-radius: 10px 0 0 10px ;
+  background-color: var(--orange) ;
+}
+.sedans-btn{
+  color: var(--orange);
+}
+.conteiner> .suvs{
+  background-color: var(--cyan);
+}
+.suvs-btn{
+  color: var(--cyan);
+}
+.conteiner> .Luxury{
+  border-radius:  0 10px  10px 0;
+  background-color: var(--cyan-dark);
+}
+ .Luxury-btn{
+ color: var(--cyan-dark);
+}
+  .attribution {
+    font-family: var(--Big);
+      font-size: 11px; 
+    text-align: center; 
+    padding-top: 1.4em;
+    }
+    .attribution a { 
+      color: hsl(228, 45%, 44%);
+      text-decoration: none;
+    }
+    .attribution a:hover{
+      color: #f6de9c  ;
+    }
+    @media(max-width: 800px){
+      main{
+        display: flex;
+        flex-direction: column;
+      }
+      .conteiner> .sedans{
+         border-radius: 10px 10px 0 0;
+      }
+      .conteiner> .Luxury{
+      border-radius: 0 0 10px 10px;
+      }
+      section{
+        width: 80vw;
+      }
+    }
